@@ -1,0 +1,382 @@
+Below is a complete HTML solution for **Problem 4: E-Commerce Product Comparison Page**. It includes all the required lists, images, comparison table, links, semantic elements, and technical block.
+
+ Laptop Comparison Guide — HTML Solution
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Comparison Guide</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 25px auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        h2 {
+            color: #172554;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            width: 250px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #fafafa;
+        }
+
+        .product-card img {
+            width: 220px;
+            height: 150px;
+            object-fit: contain;
+        }
+
+        .product-card a {
+            text-decoration: none;
+            color: #075985;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            border: 1px solid #bbb;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #172554;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+
+        blockquote {
+            background-color: #eef2ff;
+            border-left: 5px solid #4338ca;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        pre {
+            background-color: #111827;
+            color: #e5e7eb;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        mark {
+            background-color: #fde047;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Laptop Comparison Guide</h1>
+    <p>
+        Choosing the right laptop can be difficult when students have to compare
+        performance, storage, battery life, display quality and price.
+        This guide makes it easier to compare popular laptops and select one
+        according to your study and entertainment needs.
+    </p>
+</header>
+
+<main>
+
+    <!-- Product Images -->
+    <section>
+        <h2>Featured Laptops</h2>
+
+        <div class="products">
+
+            <div class="product-card">
+                <a href="https://www.apple.com/in/macbook-air/">
+                    <img
+                        src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                        alt="Apple MacBook Air laptop with a silver finish on a desk">
+                </a>
+                <h3>MacBook Air</h3>
+                <a href="https://www.apple.com/in/macbook-air/">View Product</a>
+            </div>
+
+            <div class="product-card">
+                <a href="https://www.dell.com/en-in/shop/laptops/">
+                    <img
+                        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+                        alt="Dell laptop open on a wooden table showing its screen">
+                </a>
+                <h3>Dell Inspiron</h3>
+                <a href="https://www.dell.com/en-in/shop/laptops/">View Product</a>
+            </div>
+
+            <div class="product-card">
+                <a href="https://www.hp.com/in-en/shop/laptops-tablets/personal-laptops.html">
+                    <img
+                        src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef"
+                        alt="HP laptop computer open and displaying a bright screen">
+                </a>
+                <h3>HP Pavilion</h3>
+                <a href="https://www.hp.com/in-en/shop/laptops-tablets/personal-laptops.html">
+                    View Product
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="https://www.lenovo.com/in/en/c/laptops/">
+                    <img
+                        src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed"
+                        alt="Lenovo laptop open on a desk beside a notebook">
+                </a>
+                <h3>Lenovo IdeaPad</h3>
+                <a href="https://www.lenovo.com/in/en/c/laptops/">View Product</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- General Buying Factors -->
+    <section>
+        <h2>General Laptop Buying Factors</h2>
+
+        <ul>
+            <li><strong>Processor:</strong> Choose a modern CPU for smooth multitasking.</li>
+            <li><strong>RAM:</strong> 8 GB is suitable for basic study, while 16 GB is better for demanding work.</li>
+            <li><strong>Storage:</strong> An SSD provides faster startup and application loading.</li>
+            <li><strong>Display:</strong> Consider screen size, resolution, brightness and panel quality.</li>
+            <li><strong>Battery:</strong> A larger capacity and efficient processor can provide longer usage.</li>
+            <li><strong>Warranty:</strong> Check warranty duration and the availability of service centers.</li>
+        </ul>
+    </section>
+
+    <!-- How to Choose -->
+    <section>
+        <h2>How to Choose Your Laptop</h2>
+
+        <ol>
+            <li>Determine your budget before looking at specific models.</li>
+            <li>Identify your main purpose, such as studying, programming, gaming or creative work.</li>
+            <li>Choose an appropriate processor and at least 8 GB of RAM.</li>
+            <li>Select sufficient SSD storage for your applications and files.</li>
+            <li>Compare display quality and battery life.</li>
+            <li>Check warranty coverage, customer support and upgrade options.</li>
+            <li>Compare the final prices and choose the laptop offering the best value.</li>
+        </ol>
+    </section>
+
+    <!-- Definitions -->
+    <section>
+        <h2>Important Laptop Terms</h2>
+
+        <dl>
+            <dt><strong>RAM</strong></dt>
+            <dd>Random Access Memory temporarily stores data used by running programs.</dd>
+
+            <dt><strong>SSD</strong></dt>
+            <dd>Solid State Drive is fast storage used for the operating system, applications and files.</dd>
+
+            <dt><strong>CPU</strong></dt>
+            <dd>Central Processing Unit performs the main calculations and instructions of a computer.</dd>
+
+            <dt><strong>GPU</strong></dt>
+            <dd>Graphics Processing Unit handles graphics rendering and can accelerate certain workloads.</dd>
+
+            <dt><strong>Refresh Rate</strong></dt>
+            <dd>The number of times per second a display refreshes its image, measured in Hertz (Hz).</dd>
+
+            <dt><strong>Battery Capacity</strong></dt>
+            <dd>The amount of electrical energy a laptop battery can store, commonly measured in watt-hours (Wh).</dd>
+        </dl>
+    </section>
+
+    <!-- Expert Recommendation -->
+    <section>
+        <h2>Expert Recommendation</h2>
+
+        <blockquote>
+            For most students, prioritize a reliable processor, 16 GB of RAM,
+            an SSD and strong battery life rather than paying extra for features
+            you are unlikely to use.
+        </blockquote>
+    </section>
+
+    <!-- Comparison Table -->
+    <section>
+        <h2>Laptop Comparison</h2>
+
+        <table>
+            <caption>
+                Comparison of Four Popular Laptops for Students
+            </caption>
+
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Processor</th>
+                    <th>RAM</th>
+                    <th>Storage</th>
+                    <th>Display</th>
+                    <th>Battery</th>
+                    <th>Price</th>
+                    <th>Warranty</th>
+                    <th>Best For</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><strong>MacBook Air</strong></td>
+                    <td>Apple M-series</td>
+                    <td>16 GB</td>
+                    <td>256 GB SSD</td>
+                    <td>13.6-inch Retina</td>
+                    <td>Up to 18 hours</td>
+                    <td>₹99,900</td>
+                    <td>1 Year</td>
+                    <td>Students & Programming</td>
+                    <td>
+                        <a href="https://www.apple.com/in/macbook-air/">Buy Now</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Dell Inspiron</td>
+                    <td>Intel Core i5</td>
+                    <td>16 GB</td>
+                    <td>512 GB SSD</td>
+                    <td>15.6-inch FHD</td>
+                    <td>Up to 10 hours</td>
+                    <td>₹69,999</td>
+                    <td>1 Year</td>
+                    <td>Everyday Study</td>
+                    <td>
+                        <a href="https://www.dell.com/en-in/shop/laptops/">Buy Now</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>HP Pavilion</td>
+                    <td>AMD Ryzen 5</td>
+                    <td>16 GB</td>
+                    <td>512 GB SSD</td>
+                    <td>15.6-inch FHD</td>
+                    <td>Up to 9 hours</td>
+                    <td><mark>₹64,999 — Special Offer</mark></td>
+                    <td>1 Year</td>
+                    <td>Budget Students</td>
+                    <td>
+                        <a href="https://www.hp.com/in-en/shop/laptops-tablets/personal-laptops.html">
+                            Buy Now
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Lenovo IdeaPad</strong></td>
+                    <td>Intel Core i5</td>
+                    <td>16 GB</td>
+                    <td>512 GB SSD</td>
+                    <td>14-inch FHD</td>
+                    <td>Up to 12 hours</td>
+                    <td>₹62,990</td>
+                    <td>1 Year</td>
+                    <td>Portable Student Use</td>
+                    <td>
+                        <a href="https://www.lenovo.com/in/en/c/laptops/">
+                            Buy Now
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Technical Block -->
+    <section>
+        <h2>Technical Example</h2>
+
+        <p>
+            A simple specification object can be represented using
+            <code>JSON</code>:
+        </p>
+
+        <pre><code>{
+    "product": "Student Laptop",
+    "ram": "16GB",
+    "storage": "512GB SSD",
+    "display": "Full HD",
+    "battery": "10 hours"
+}</code></pre>
+    </section>
+
+    <!-- Buying Guidance -->
+    <section>
+        <h2>Final Buying Guidance</h2>
+
+        <p>
+            If you want premium portability and excellent battery life,
+            the <strong>MacBook Air</strong> is a strong recommendation.
+            For Windows users, the Dell, HP and Lenovo options provide
+            competitive specifications at lower prices.
+        </p>
+
+        <p>
+            Always verify the latest price, configuration and warranty
+            information on the manufacturer's website before purchasing.
+        </p>
+    </section>
+
+</main>
+
+</body>
+</html>
+```

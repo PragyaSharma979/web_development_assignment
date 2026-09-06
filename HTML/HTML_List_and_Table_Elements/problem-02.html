@@ -1,0 +1,412 @@
+Below is a complete **HTML-only solution**. It is intentionally structured so the page remains understandable even if CSS is disabled.
+
+ Restaurant Digital Menu & Pricing Board — HTML✓
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Spice - Digital Menu</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Royal Spice</h1>
+
+        <p>
+            Welcome to The Royal Spice, where traditional Indian flavours meet
+            modern dining. We serve freshly prepared dishes using authentic
+            spices, seasonal ingredients and time-honoured recipes.
+        </p>
+
+        <figure>
+            <img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+                alt="Warm and elegant restaurant dining area"
+                width="700"
+            >
+            <figcaption>Welcome to The Royal Spice restaurant.</figcaption>
+        </figure>
+    </header>
+
+    <hr>
+
+    <nav>
+        <h2>Quick Navigation</h2>
+        <ul>
+            <li><a href="#starters">Starters</a></li>
+            <li><a href="#main-course">Main Course</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#beverages">Beverages</a></li>
+            <li><a href="#experience">Chef's Recommended Dining Experience</a></li>
+            <li><a href="#definitions">Menu Terms</a></li>
+            <li><a href="#pricing">Detailed Pricing</a></li>
+            <li><a href="#contact">Contact & Reservation</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <section id="starters">
+            <h2>Starters</h2>
+
+            <ul>
+                <li>
+                    <strong>Paneer Tikka</strong> -
+                    Marinated cottage cheese grilled with peppers and onions.
+                    <mark>Chef's Special</mark>
+                </li>
+
+                <li>
+                    Vegetable Samosa -
+                    Crispy pastry filled with spiced potatoes and peas.
+                </li>
+
+                <li>
+                    Tandoori Chicken -
+                    Juicy chicken marinated in yogurt and aromatic spices.
+                </li>
+            </ul>
+
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950"
+                    alt="Crispy Indian samosas served as a starter"
+                    width="400"
+                >
+                <figcaption>Freshly prepared vegetable samosas.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="main-course">
+            <h2>Main Course</h2>
+
+            <ul>
+                <li>
+                    <strong>Royal Butter Chicken</strong> -
+                    Tender chicken cooked in a rich tomato, butter and cream
+                    gravy.
+                    <mark>Signature Dish</mark>
+                </li>
+
+                <li>
+                    Dal Makhani -
+                    Slow-cooked black lentils finished with butter and cream.
+                </li>
+
+                <li>
+                    Vegetable Biryani -
+                    Fragrant basmati rice cooked with seasonal vegetables and
+                    traditional biryani spices.
+                </li>
+
+                <li>
+                    Palak Paneer -
+                    Cottage cheese cooked in a creamy spinach gravy.
+                </li>
+            </ul>
+
+            <figure>
+                <a href="https://www.example.com/royal-spice-menu">
+                    <img
+                        src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+                        alt="Indian butter chicken served with rice"
+                        width="400"
+                    >
+                </a>
+                <figcaption>
+                    Click the image to explore our complete online menu.
+                </figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+
+            <ul>
+                <li>
+                    Gulab Jamun -
+                    Soft milk-solid dumplings served warm with sugar syrup.
+                </li>
+
+                <li>
+                    Mango Kulfi -
+                    Traditional Indian frozen dessert made with sweet mango
+                    and milk.
+                    <mark>Summer Offer</mark>
+                </li>
+
+                <li>
+                    Gajar Halwa -
+                    Slow-cooked carrot pudding topped with nuts.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="beverages">
+            <h2>Beverages</h2>
+
+            <ul>
+                <li>Masala Chai - Indian tea brewed with aromatic spices.</li>
+                <li>Sweet Lassi - Refreshing yogurt drink with a hint of sweetness.</li>
+                <li>Fresh Lime Soda - Chilled lime drink available sweet or salted.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="experience">
+            <h2>Chef's Recommended Dining Experience</h2>
+
+            <p>
+                Follow this sequence for the chef's preferred way to enjoy
+                a complete meal:
+            </p>
+
+            <ol>
+                <li>Begin with Paneer Tikka and a refreshing Fresh Lime Soda.</li>
+                <li>Enjoy the Royal Butter Chicken with fragrant basmati rice.</li>
+                <li>Add Dal Makhani and freshly baked Indian bread.</li>
+                <li>Finish the meal with warm Gulab Jamun.</li>
+                <li>End with a cup of traditional Masala Chai.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="definitions">
+            <h2>Menu Terms</h2>
+
+            <dl>
+                <dt><strong>Vegan</strong></dt>
+                <dd>A dish prepared without meat, dairy, eggs or other animal-derived ingredients.</dd>
+
+                <dt><strong>Chef's Special</strong></dt>
+                <dd>A dish specially selected by our chef for its flavour and popularity.</dd>
+
+                <dt><strong>Gluten-Free</strong></dt>
+                <dd>A dish prepared without ingredients containing gluten.</dd>
+
+                <dt><strong>Bestseller</strong></dt>
+                <dd>A popular dish that is frequently ordered by our customers.</dd>
+
+                <dt><strong>Combo</strong></dt>
+                <dd>A meal containing multiple food or beverage items offered together at a combined price.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section id="pricing">
+            <h2>Detailed Pricing</h2>
+
+            <table border="1">
+                <caption>
+                    The Royal Spice - Detailed Food and Beverage Pricing,
+                    Sizes and Availability
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><strong>Paneer Tikka</strong></td>
+                        <td rowspan="3">Starters</td>
+                        <td>Regular</td>
+                        <td>₹220</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vegetable Samosa</td>
+                        <td>2 Pieces</td>
+                        <td>₹100</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tandoori Chicken</td>
+                        <td>Half</td>
+                        <td>₹320</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Royal Butter Chicken</strong></td>
+                        <td rowspan="4">Main Course</td>
+                        <td>Regular</td>
+                        <td>₹390</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dal Makhani</td>
+                        <td>Regular</td>
+                        <td>₹280</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vegetable Biryani</td>
+                        <td>Regular</td>
+                        <td>₹300</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Palak Paneer</td>
+                        <td>Regular</td>
+                        <td>₹290</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gulab Jamun</td>
+                        <td rowspan="3">Desserts</td>
+                        <td>2 Pieces</td>
+                        <td>₹120</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mango Kulfi</td>
+                        <td>2 Scoops</td>
+                        <td>₹150</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Gajar Halwa</td>
+                        <td>Regular</td>
+                        <td>₹140</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Masala Chai</td>
+                        <td rowspan="3">Beverages</td>
+                        <td>250 ml</td>
+                        <td>₹80</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sweet Lassi</td>
+                        <td>300 ml</td>
+                        <td>₹120</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fresh Lime Soda</td>
+                        <td>300 ml</td>
+                        <td>₹90</td>
+                        <td>Available</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><strong>Chef's Family Combo</strong></td>
+                        <td>₹999</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Special Offers</h2>
+
+            <ul>
+                <li><mark>10% off</mark> on the Chef's Family Combo every Sunday.</li>
+                <li><mark>Free Masala Chai</mark> with any main-course order before 5 PM.</li>
+                <li><mark>Summer Offer</mark> - Get Mango Kulfi at a special price.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Customer Feedback</h2>
+
+            <blockquote>
+                "The food was delicious, the service was excellent, and the
+                Butter Chicken was unforgettable!"
+            </blockquote>
+
+            <p>
+                — A happy customer
+            </p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer id="contact">
+        <h2>Location & Contact</h2>
+
+        <address>
+            The Royal Spice<br>
+            24 Food Street, Hazratganj<br>
+            Lucknow, Uttar Pradesh, India<br>
+            Phone: <a href="tel:+919876543210">+91 98765 43210</a><br>
+            Email: <a href="mailto:info@theroyalspice.example">info@theroyalspice.example</a>
+        </address>
+
+        <p>
+            <a href="https://maps.google.com/?q=Hazratganj+Lucknow">
+                View Restaurant Location
+            </a>
+        </p>
+
+        <p>
+            <a href="mailto:reservations@theroyalspice.example">
+                Make a Reservation
+            </a>
+        </p>
+
+        <p>
+            &copy; 2026 The Royal Spice. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
+```
+
+ ### Why this meets the requirements
+
+ - `<ul>` is used for dishes within each food category.
+- `<ol>` is used for the genuinely sequential chef-recommended experience.
+- `<dl>` defines **Vegan, Chef's Special, Gluten-Free, Bestseller,** and **Combo**.
+- The pricing table contains **Item, Category, Size, Price,** and **Availability**.
+- `rowspan` groups the repeated food categories, while `colspan` is used for the family combo.
+- There are well over **8 food items** and at least **3 images**.
+- One food image is wrapped in an `<a>` element, making it clickable.
+- `<strong>` highlights signature dishes.
+- `<mark>` highlights special offers.
+- `<blockquote>` provides a customer quote.
+- Contact, location, telephone, email, and reservation links are included.
+- Semantic elements such as `<header>`, `<nav>`, `<main>`, `<section>`, `<figure>`, `<figcaption>`, `<address>`, `<thead>`, and `<tbody>` improve the HTML structure.
+- No CSS is required, so the menu remains readable and logically organized with CSS disabled.

@@ -1,0 +1,314 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Appointment Booking</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hospital / Clinic Appointment Booking</h1>
+
+        <p>
+            Welcome to our clinic appointment booking page. Please provide
+            your contact details, select your preferred doctor, and enter
+            the reason for your visit. Fields marked with * are mandatory.
+        </p>
+    </header>
+
+    <main>
+
+        <h2>Book an Appointment</h2>
+
+        <form action="#" method="post">
+
+            <h3>Patient Information</h3>
+
+            <p>
+                <label for="patient_name">Patient Name *</label><br>
+                <input type="text"
+                       id="patient_name"
+                       name="patient_name"
+                       placeholder="Enter patient name"
+                       minlength="3"
+                       maxlength="60"
+                       required>
+            </p>
+
+            <p>
+                <label for="email">Email Address *</label><br>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="example@email.com"
+                       required>
+            </p>
+
+            <p>
+                <label for="mobile">Mobile Number *</label><br>
+                <input type="tel"
+                       id="mobile"
+                       name="mobile_number"
+                       placeholder="10-digit mobile number"
+                       pattern="[0-9]{10}"
+                       maxlength="10"
+                       required>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth *</label><br>
+                <input type="date"
+                       id="dob"
+                       name="date_of_birth"
+                       min="1920-01-01"
+                       max="2026-12-31"
+                       required>
+            </p>
+
+            <p>
+                <label for="patient_id">Patient ID (Optional)</label><br>
+                <input type="text"
+                       id="patient_id"
+                       name="patient_id"
+                       placeholder="Enter patient ID if available"
+                       minlength="4"
+                       maxlength="20">
+            </p>
+
+            <h3>Appointment Details</h3>
+
+            <p>
+                <label for="appointment_date">Appointment Date *</label><br>
+                <input type="date"
+                       id="appointment_date"
+                       name="appointment_date"
+                       min="2026-09-07"
+                       max="2026-12-31"
+                       required>
+            </p>
+
+            <p>
+                <label for="appointment_time">Preferred Appointment Time *</label><br>
+                <input type="time"
+                       id="appointment_time"
+                       name="appointment_time"
+                       min="09:00"
+                       max="18:00"
+                       step="1800"
+                       required>
+            </p>
+
+            <p>
+                <label for="doctor">Select Doctor *</label><br>
+                <select id="doctor" name="doctor" required>
+                    <option value="">-- Select Doctor --</option>
+                    <option value="dr_amit_verma">
+                        Dr. Amit Verma - General Physician
+                    </option>
+                    <option value="dr_neha_sharma">
+                        Dr. Neha Sharma - Dermatologist
+                    </option>
+                    <option value="dr_rohit_mehta">
+                        Dr. Rohit Mehta - Cardiologist
+                    </option>
+                    <option value="dr_pooja_singh">
+                        Dr. Pooja Singh - Pediatrician
+                    </option>
+                    <option value="dr_kunal_gupta">
+                        Dr. Kunal Gupta - Orthopedic Specialist
+                    </option>
+                </select>
+            </p>
+
+            <h3>Visit Type</h3>
+
+            <p>
+                <input type="radio"
+                       id="new_patient"
+                       name="visit_type"
+                       value="new_patient"
+                       required>
+                <label for="new_patient">New Patient</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="follow_up"
+                       name="visit_type"
+                       value="follow_up">
+                <label for="follow_up">Follow-up</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="consultation"
+                       name="visit_type"
+                       value="consultation">
+                <label for="consultation">Consultation</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="emergency"
+                       name="visit_type"
+                       value="emergency">
+                <label for="emergency">Emergency</label>
+            </p>
+
+            <h3>Preferred Communication Method</h3>
+
+            <p>
+                <input type="radio"
+                       id="communication_email"
+                       name="communication_method"
+                       value="email"
+                       required>
+                <label for="communication_email">Email</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="communication_phone"
+                       name="communication_method"
+                       value="phone">
+                <label for="communication_phone">Phone Call</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="communication_sms"
+                       name="communication_method"
+                       value="sms">
+                <label for="communication_sms">SMS</label>
+            </p>
+
+            <h3>Reason for Visit</h3>
+
+            <p>
+                <label for="reason">
+                    Reason for Visit / Additional Information *
+                </label><br>
+
+                <textarea id="reason"
+                          name="visit_reason"
+                          rows="6"
+                          cols="50"
+                          minlength="10"
+                          maxlength="500"
+                          placeholder="Describe the reason for your visit or provide additional information"
+                          required></textarea>
+            </p>
+
+            <h3>Appointment Terms</h3>
+
+            <p>
+                <input type="checkbox"
+                       id="terms"
+                       name="appointment_terms"
+                       value="accepted"
+                       required>
+
+                <label for="terms">
+                    I accept the clinic appointment terms and confirm that
+                    the information provided by me is correct. *
+                </label>
+            </p>
+
+            <p>
+                <input type="submit"
+                       name="submit_appointment"
+                       value="Book Appointment">
+
+                <input type="reset"
+                       name="reset_appointment"
+                       value="Reset Form">
+            </p>
+
+        </form>
+
+        <h2>Clinic Timings</h2>
+
+        <table border="1">
+            <caption>Weekly Clinic Timings</caption>
+
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Evening</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+                <td>9:00 AM - 1:00 PM</td>
+                <td>3:00 PM - 6:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>9:00 AM - 1:00 PM</td>
+                <td>3:00 PM - 6:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>9:00 AM - 1:00 PM</td>
+                <td>3:00 PM - 6:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>9:00 AM - 1:00 PM</td>
+                <td>3:00 PM - 6:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>9:00 AM - 1:00 PM</td>
+                <td>3:00 PM - 6:00 PM</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>9:00 AM - 1:00 PM</td>
+                <td>Closed</td>
+            </tr>
+
+            <tr>
+                <td>Sunday</td>
+                <td colspan="2">Closed</td>
+            </tr>
+        </table>
+
+        <h2>Contact Information</h2>
+
+        <p>
+            For general clinic enquiries, contact our reception desk.
+        </p>
+
+        <p>
+            <a href="tel:+911234567890">
+                Call Clinic Reception
+            </a>
+        </p>
+
+        <p>
+            <a href="tel:112">
+                Emergency Contact: 112
+            </a>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 City Care Clinic. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
+```

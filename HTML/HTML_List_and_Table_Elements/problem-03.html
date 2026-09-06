@@ -1,0 +1,269 @@
+Below is a complete HTML solution for **Problem 3: College Timetable & Academic Portal**, including the required lists, two tables, merged cells, image, link, `<blockquote>`, `<strong>`, and `<mark>`.
+
+ College Timetable & Academic Portal — HTML✓
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Academic Portal</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Department of Computer Science</h1>
+        <p>Department Academic Portal</p>
+
+        <img src="https://via.placeholder.com/700x200.png?text=Computer+Science+Department"
+             alt="Computer Science Department"
+             width="700">
+    </header>
+
+    <hr>
+
+    <!-- Introduction Section -->
+    <section>
+        <h2>Introduction</h2>
+        <p>
+            Welcome to the Department of Computer Science Academic Portal.
+            This page provides students with the weekly timetable, subjects,
+            faculty information, academic rules, and contact details.
+        </p>
+
+        <blockquote>
+            "Our department is committed to developing strong technical skills,
+            practical knowledge, and professional values among students."
+            <br>
+            — Head of the Department
+        </blockquote>
+
+        <p>
+            Visit the official
+            <a href="https://www.example.com" target="_blank">
+                Department Website
+            </a>
+            for additional academic information.
+        </p>
+    </section>
+
+    <!-- Weekly Timetable -->
+    <section>
+        <h2>Weekly Timetable</h2>
+
+        <p>
+            <mark>Important Academic Notice:</mark>
+            Students must attend all scheduled practical and laboratory sessions.
+        </p>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <caption><strong>Weekly Class Timetable</strong></caption>
+
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>1st Period</th>
+                    <th>2nd Period</th>
+                    <th>3rd Period</th>
+                    <th>Lunch</th>
+                    <th>4th Period</th>
+                    <th>5th Period</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td>Data Structures</td>
+                    <td>Operating Systems</td>
+                    <td>DBMS</td>
+                    <td rowspan="6">Lunch<br>12:30 - 1:30 PM</td>
+                    <td>Computer Networks</td>
+                    <td>Lab</td>
+                </tr>
+
+                <tr>
+                    <th>Tuesday</th>
+                    <td>DBMS</td>
+                    <td>Web Technology</td>
+                    <td>Data Structures</td>
+                    <td colspan="2">Web Technology Lab</td>
+                </tr>
+
+                <tr>
+                    <th>Wednesday</th>
+                    <td>Operating Systems</td>
+                    <td>Computer Networks</td>
+                    <td>Web Technology</td>
+                    <td>Data Structures</td>
+                    <td>Tutorial</td>
+                </tr>
+
+                <tr>
+                    <th>Thursday</th>
+                    <td>Computer Networks</td>
+                    <td>DBMS</td>
+                    <td>Operating Systems</td>
+                    <td colspan="2">DBMS Lab</td>
+                </tr>
+
+                <tr>
+                    <th>Friday</th>
+                    <td>Web Technology</td>
+                    <td>Data Structures</td>
+                    <td>Computer Networks</td>
+                    <td>Operating Systems</td>
+                    <td>Seminar</td>
+                </tr>
+
+                <tr>
+                    <th>Saturday</th>
+                    <td>DBMS</td>
+                    <td>Web Technology</td>
+                    <td>Project Work</td>
+                    <td colspan="2">Common Department Session</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Subjects Section -->
+    <section>
+        <h2>Subjects</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <caption><strong>Subject and Faculty Information</strong></caption>
+
+            <thead>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject Name</th>
+                    <th>Faculty</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>CS301</td>
+                    <td>Data Structures</td>
+                    <td>Dr. Anil Sharma</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>CS302</td>
+                    <td>Operating Systems</td>
+                    <td>Prof. Neha Verma</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>CS303</td>
+                    <td>Database Management Systems</td>
+                    <td>Dr. Raj Kumar</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>CS304</td>
+                    <td>Computer Networks</td>
+                    <td>Prof. Priya Singh</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>CS305</td>
+                    <td>Web Technology</td>
+                    <td>Dr. Amit Gupta</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Faculty Information -->
+    <section>
+        <h2>Faculty Information</h2>
+
+        <ul>
+            <li>Dr. Anil Sharma — Data Structures</li>
+            <li>Prof. Neha Verma — Operating Systems</li>
+            <li>Dr. Raj Kumar — Database Management Systems</li>
+            <li>Prof. Priya Singh — Computer Networks</li>
+            <li>Dr. Amit Gupta — Web Technology</li>
+        </ul>
+    </section>
+
+    <!-- Practical Class Sequence -->
+    <section>
+        <h2>Sequence Before a Practical Class</h2>
+
+        <ol>
+            <li>Read the practical instructions before entering the laboratory.</li>
+            <li>Bring the required notebook and study material.</li>
+            <li>Review the previous practical experiment.</li>
+            <li>Enter the laboratory on time.</li>
+            <li>Follow the faculty's instructions and complete the experiment.</li>
+            <li>Submit the practical record after completion.</li>
+        </ol>
+    </section>
+
+    <!-- Academic Rules -->
+    <section>
+        <h2>Academic Rules</h2>
+
+        <h3>Classroom Rules</h3>
+
+        <ul>
+            <li><strong>Students must attend classes regularly.</strong></li>
+            <li><strong>Students must be punctual for every lecture.</strong></li>
+            <li>Maintain silence during lectures.</li>
+            <li>Mobile phones should be kept on silent mode.</li>
+            <li>Keep the classroom clean.</li>
+            <li>Respect faculty members and fellow students.</li>
+        </ul>
+
+        <h3>Academic Terms</h3>
+
+        <dl>
+            <dt><strong>Lecture</strong></dt>
+            <dd>A teaching session in which theoretical concepts are explained.</dd>
+
+            <dt><strong>Lab</strong></dt>
+            <dd>A practical session where students perform experiments or programming tasks.</dd>
+
+            <dt><strong>Tutorial</strong></dt>
+            <dd>A guided academic session focused on solving problems and clearing doubts.</dd>
+
+            <dt><strong>Internal Assessment</strong></dt>
+            <dd>Evaluation conducted during the semester through tests, assignments, attendance, and other activities.</dd>
+
+            <dt><strong>Practical</strong></dt>
+            <dd>A hands-on academic activity used to apply theoretical knowledge.</dd>
+        </dl>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <h2>Contact</h2>
+
+        <address>
+            Department of Computer Science<br>
+            ABC College of Engineering<br>
+            University Road, New Delhi, India<br>
+            Email: csdepartment@example.com<br>
+            Phone: +91-98765-43210
+        </address>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Department of Computer Science. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
