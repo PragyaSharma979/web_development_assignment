@@ -1,0 +1,231 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Expert Showcase</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        /* Heading */
+        .heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .heading h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #172554;
+        }
+
+        .heading p {
+            font-size: 16px;
+            color: #64748b;
+        }
+
+        /* Cards */
+        .experts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
+        }
+
+        /* Expert Image */
+        .card img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #dbeafe;
+            margin-bottom: 18px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            font-size: 15px;
+            color: #2563eb;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .company {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        /* Button */
+        .button-area {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            padding: 13px 30px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 2px solid #2563eb;
+            transition: 0.3s;
+        }
+
+        .explore-btn:hover {
+            background-color: white;
+            color: #2563eb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .experts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .experts {
+                grid-template-columns: 1fr;
+            }
+
+            .heading h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="heading">
+            <h1>Meet Our Technology Experts</h1>
+            <p>Connect with experienced professionals and learn from industry leaders.</p>
+        </div>
+
+        <div class="experts">
+
+            <!-- Expert 1 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                     alt="Arjun Mehta">
+                <h2>Arjun Mehta</h2>
+                <p class="role">Backend Engineer</p>
+                <p class="company">Google</p>
+            </div>
+
+            <!-- Expert 2 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                     alt="Riya Sharma">
+                <h2>Riya Sharma</h2>
+                <p class="role">Product Engineer</p>
+                <p class="company">Microsoft</p>
+            </div>
+
+            <!-- Expert 3 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg"
+                     alt="Karan Verma">
+                <h2>Karan Verma</h2>
+                <p class="role">Software Architect</p>
+                <p class="company">Amazon</p>
+            </div>
+
+            <!-- Expert 4 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg"
+                     alt="Neha Kapoor">
+                <h2>Neha Kapoor</h2>
+                <p class="role">Data Engineer</p>
+                <p class="company">Adobe</p>
+            </div>
+
+            <!-- Expert 5 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/52.jpg"
+                     alt="Rohit Malhotra">
+                <h2>Rohit Malhotra</h2>
+                <p class="role">Cloud Engineer</p>
+                <p class="company">IBM</p>
+            </div>
+
+            <!-- Expert 6 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/25.jpg"
+                     alt="Ananya Singh">
+                <h2>Ananya Singh</h2>
+                <p class="role">Frontend Engineer</p>
+                <p class="company">Flipkart</p>
+            </div>
+
+            <!-- Expert 7 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/men/67.jpg"
+                     alt="Varun Gupta">
+                <h2>Varun Gupta</h2>
+                <p class="role">DevOps Engineer</p>
+                <p class="company">Oracle</p>
+            </div>
+
+            <!-- Expert 8 -->
+            <div class="card">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg"
+                     alt="Priya Nair">
+                <h2>Priya Nair</h2>
+                <p class="role">Product Manager</p>
+                <p class="company">Salesforce</p>
+            </div>
+
+        </div>
+
+        <div class="button-area">
+            <a href="#" class="explore-btn">EXPLORE ALL</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

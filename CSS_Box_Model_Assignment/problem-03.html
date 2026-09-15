@@ -1,0 +1,231 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal - Brand Ecosystem</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #222;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        /* Company Heading */
+        .company-logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 45px;
+        }
+
+        /* Product Cards */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            width: 25%;
+            min-height: 330px;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 18px;
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Logo Box */
+        .logo-box {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Individual Logo Backgrounds */
+        .zomato .logo-box {
+            background-color: #fff0f0;
+            color: #e23744;
+        }
+
+        .blinkit .logo-box {
+            background-color: #f0ffe9;
+            color: #159447;
+        }
+
+        .district .logo-box {
+            background-color: #f0edff;
+            color: #6948d8;
+        }
+
+        .hyperpure .logo-box {
+            background-color: #fff5e8;
+            color: #d88918;
+        }
+
+        .card h2 {
+            margin: 12px 0;
+            font-size: 25px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            min-height: 75px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            background-color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .products {
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+
+            .company-logo {
+                font-size: 38px;
+            }
+
+            .tagline {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="company-logo">eternal</div>
+
+        <div class="tagline">
+            POWERING INDIA'S CHANGING LIFESTYLES
+        </div>
+
+        <div class="products">
+
+            <!-- Zomato -->
+            <div class="card zomato">
+                <div class="logo-box">Z</div>
+
+                <h2>Zomato</h2>
+
+                <p>
+                    Discover restaurants, order delicious food,
+                    and enjoy convenient food delivery.
+                </p>
+
+                <a href="#">Check it out →</a>
+            </div>
+
+            <!-- Blinkit -->
+            <div class="card blinkit">
+                <div class="logo-box">B</div>
+
+                <h2>Blinkit</h2>
+
+                <p>
+                    Get groceries, daily essentials, and
+                    household products delivered quickly.
+                </p>
+
+                <a href="#">Check it out →</a>
+            </div>
+
+            <!-- District -->
+            <div class="card district">
+                <div class="logo-box">D</div>
+
+                <h2>District</h2>
+
+                <p>
+                    Explore movies, events, entertainment,
+                    and exciting experiences near you.
+                </p>
+
+                <a href="#">Check it out →</a>
+            </div>
+
+            <!-- Hyperpure -->
+            <div class="card hyperpure">
+                <div class="logo-box">H</div>
+
+                <h2>Hyperpure</h2>
+
+                <p>
+                    A reliable supply platform providing
+                    quality ingredients to restaurants.
+                </p>
+
+                <a href="#">Check it out →</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+```
+

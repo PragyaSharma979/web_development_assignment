@@ -1,0 +1,177 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Articles</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 35px;
+        }
+
+        .articles {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 32%;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            padding-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .category {
+            color: #e67e22;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .card h2 {
+            font-size: 21px;
+            line-height: 1.3;
+            color: #222;
+            margin: 0 0 12px 0;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0 0 18px 0;
+        }
+
+        .read-more {
+            color: #d35400;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid #d35400;
+            padding-bottom: 3px;
+        }
+
+        .read-more:hover {
+            color: #222;
+            border-color: #222;
+        }
+
+        @media (max-width: 800px) {
+            .articles {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Featured Articles</h1>
+
+        <div class="articles">
+
+            <!-- Article 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3"
+                     alt="Fashion clothing">
+
+                <div class="card-content">
+                    <div class="category">Fashion Tips</div>
+
+                    <h2>What Curling Irons Are The Best Ones</h2>
+
+                    <p>
+                        Discover useful fashion and styling tips to create
+                        beautiful everyday looks with confidence.
+                    </p>
+
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
+                     alt="Autumn and winter shoes">
+
+                <div class="card-content">
+                    <div class="category">Travel Guide</div>
+
+                    <h2>Vogue's Ultimate Guide To Autumn/Winter Shoes</h2>
+
+                    <p>
+                        Explore seasonal style ideas and discover the perfect
+                        footwear for your next adventure.
+                    </p>
+
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348"
+                     alt="Beauty products">
+
+                <div class="card-content">
+                    <div class="category">Beauty</div>
+
+                    <h2>Simple Beauty Essentials For Everyday Style</h2>
+
+                    <p>
+                        Learn about simple beauty essentials that can make
+                        your daily routine easier and more enjoyable.
+                    </p>
+
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
