@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>problem-02</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            height:200px;
+            width:400px;
+            gap:10px;
+           grid-template-areas: "a a b b"
+                                "c d d d"
+                                "e e e e";
+           margin: 200px 400px;                     
+        }
+        .key1{
+            grid-area: a;
+            background-color: gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding:20px;
+        }
+        .key1{
+            grid-area: a;
+            background-color: gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding:20px;
+        }
+        .key2{
+            grid-area: b;
+            background-color: gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding:20px;
+        }
+        .key3{
+            grid-area: c;
+            background-color: gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding:20px;
+        }
+        .key4{
+            grid-area: d;
+            background-color: gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding:20px;
+        }
+        .key5{
+            grid-area: e;
+            background-color: gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            padding:20px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <DIV class="key1">A</DIV>
+        <DIV class="key2">B</DIV>
+        <DIV class="key3">C</DIV>
+        <DIV class="key4">D</DIV>
+        <DIV class="key5">E</DIV>
+    </div>
+</body>
+</html>
