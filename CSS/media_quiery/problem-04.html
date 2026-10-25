@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem-04</title>
+    <style>
+        .container{
+            display:grid;
+
+        }
+        .key{
+            display: grid;
+            color:black;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+
+        }
+        .box1{
+            background-color: red;
+        padding: 90px;}
+            .box2{
+            background-color:yellowgreen;
+            padding: 20px;
+        }
+        .box3{
+            background-color: yellowgreen;
+            padding: 20px;
+            font-size: 20px;
+        }
+        .box4{background-color: yellowgreen;
+        padding: 20px;}
+        .nav{background-color: yellow;
+        padding: 10px;
+        font-size: 20px;
+        width: 900px;}
+
+        /*==============================
+          1. Large screen Layout
+          ==============================*/
+          @media screen and (min-width:1024px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+          }
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav">Navigation</div>
+        <div class="key box1">Left Box</div>
+        <div class="key box2">Right Box 1</div>
+        <div class="key box3">Right Box 2</div>
+        <div class="key box4">Right Box 3</div>
+
+    </div>
+</body>
+</html>

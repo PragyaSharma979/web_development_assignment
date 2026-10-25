@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem-02</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        body{
+            padding:20px ;
+        }
+        .key{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+         .nav{
+           
+            background-color: yellow;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;  
+        }
+        .container{
+             padding: 40px;
+            color: whitesmoke;
+            font-size: 40px;
+            font-weight: bold;
+            min-height: 150px;
+            border: 1px solid black;
+        }
+        .box1{background-color: brown;}
+        .box2{background-color: black;}
+        .box3{background-color: red;}
+
+        /*==================================================
+               1. Large Screen Layout (> 1024px)
+        ==================================================== */
+        @media screen and (min-width: 1024px){
+            .key{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 15px;
+            } 
+            .nav{grid-column:span 4;
+             }
+        }
+        /*==================================================
+             2. Medium Screen Layout (601px-1023px)
+        ==================================================== */
+        @media screen and (min-width:601px) and (max-width:1023px)
+         {.key
+                {display: grid;
+                grid-template-columns: repeat(2,1fr);} 
+            .container{grid-column:span 2; }}
+            /*==================================================
+             3. Small Screen Layout (<= 600px)
+            ==================================================== */
+        @media screen and (max-width:600px) 
+         {.key
+                {display: grid;
+                grid-template-columns: 1fr;} 
+            .container{grid-column:span 1; }}
+
+            
+    </style>
+</head>
+<body>
+    <div class="key">
+    <div class="nav">Navigation</div>
+    <div class="container box1">1</div>
+    <div class="container box2">2</div>
+    <div class="container box3">3</div>
+    </div>
+</body>
+</html>

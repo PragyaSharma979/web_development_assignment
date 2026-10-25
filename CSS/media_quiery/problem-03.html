@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem-03</title>
+    <style>
+    *{
+      box-sizing:border-box ;  
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        padding:20px;
+    }
+    .nav{
+        display:grid;
+        background-color:yellow;
+        padding:20px;
+        font-size:20px;  
+    }
+    .faar{
+            display: grid;
+            gap: 15px;
+        }
+    .key{
+        display: grid;
+        color:black;
+        padding:40px;
+        margin: 15px;
+    }
+    .box1{background-color: rgb(224, 60, 60);}
+    .box2{background-color: lightgreen;}
+    /*====================================
+      1.   Large Screen Layout (>1024)
+      ====================================*/
+      @media screen and (min-width:1024px) {
+        .faar{display:grid;
+             grid-template-columns:repeat(2,1fr);
+             gap: 15px;
+            }
+        .nav{grid-column: span 3;}    
+      }
+      /*=================================
+          2. Small Screen Layout (<=600)
+        =================================*/
+          @media screen and (max-width:600px) {
+            .faar{display: grid;
+            grid-template-columns: 1fr;}
+            .nav{grid-column: span 1fr;}  
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="faar">
+    <div class="nav">Navigation</div>
+    <div class="key box1">1</div>
+    <div class="key box2">2</div>
+    </div>
+</body>
+</html>
